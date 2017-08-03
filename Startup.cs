@@ -22,6 +22,7 @@ namespace ChangeMe
 
     public void Configure(IApplicationBuilder app)
     {
+      app.UserDeveloperExceptionPage();
       app.UseStaticFiles();
       app.UseMvc(routes =>
       {
